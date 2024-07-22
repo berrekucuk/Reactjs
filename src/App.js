@@ -8,10 +8,29 @@ import ContactPage from "./pages/ContactPage";
 import NotFound from "./pages/NotFound";
 import ProductsPage from "./pages/ProductsPage";
 import ProfilePage from "./pages/ProfilePage";
+import CounterSample from "./stateSamples/CounterSample";
+import ArraySample from "./stateSamples/ArraySample";
+import BooleanSample from "./stateSamples/BooleanSample";
+import ImageStateSample from "./stateSamples/ImageStateSample";
+import StyleStateSample from "./stateSamples/StyleStateSample";
+import StyleStateSample2 from "./stateSamples/StyleStateSample2";
 
 
 
 function App(){
+
+  return <>
+    {/* <StateIntro /> */}
+    {/* <CounterSample/> */}
+    {/* <ArraySample/> */}
+    {/* <ArraySample2/> */}
+    {/* <BooleanSample/> */}
+    {/* <ImageStateSample/> */}
+    {/* <StyleStateSample/> */}
+    <StyleStateSample2/>
+
+
+  </>
   return <>
   <ul style={{display:'flex', justifyContent:'space-evenly'}}>
     <Link to ='/'>Home</Link>
