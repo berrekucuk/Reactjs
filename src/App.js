@@ -17,6 +17,10 @@ import StyleStateSample2 from "./stateSamples/StyleStateSample2";
 import Suppliers from "./pages/Suppliers";
 import Users from "./pages/Users";
 import Todos from "./pages/Todos";
+import Product from "./pages/Product";
+import Order from "./pages/Order";
+import AddProduct from "./pages/AddProduct";
+import AddSupplier from "./pages/AddSupplier";
 
 
 
@@ -44,7 +48,10 @@ function App(){
     <Link to='/suppliers'>Suppliers</Link>
     <Link to='/users'>Users</Link>
     <Link to='/todos'>Todos</Link>
-
+    <Link to='/product'>Product</Link>
+    <Link to='/order'>Order</Link>
+    <Link to='/add-product'>Add Product</Link>
+    <Link to='/add-supplier'>Add Supplier</Link>
 
   </ul>
 
@@ -55,12 +62,14 @@ function App(){
         <Route path="/contact" element={<ContactPage/>}/>
         <Route path="/products" element={<ProductsPage/>}/>
         <Route path="/profile" element={<ProfilePage/>}/>
-        <Route path="*" element={<NotFound/>}/>
         <Route path="/suppliers" element={<Suppliers/>}/>
         <Route path="/users" element={<Users/>}/>
         <Route path="/todos" element={<Todos/>}/>
-
-
+        <Route path="/product" element={<Product/>}/>
+        <Route path="/order" element={<Order/>}/>
+        <Route path="/add-product" element={<AddProduct/>}/>
+        <Route path="/add-supplier" element={<AddSupplier/>}/>
+        <Route path="*" element={<NotFound/>}/>
     </Routes>
     
   </>

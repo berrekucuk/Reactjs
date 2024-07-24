@@ -14,8 +14,7 @@ function Todos() {
             setloading(false)
         })
     },[])
-  return <>
-       
+  return <>       
     {
     loading == true ? <h1>Loading...</h1> :  
     <table>
